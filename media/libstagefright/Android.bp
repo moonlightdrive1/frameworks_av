@@ -146,16 +146,14 @@ cc_library_shared {
             // enable experiments only in userdebug and eng builds
             cflags: ["-DENABLE_STAGEFRIGHT_EXPERIMENTS"],
         },
-        debuggable: {
-            cant_reallocate_omx_buffers: {
-                cflags: ["-DBOARD_CANT_REALLOCATE_OMX_BUFFERS"],
-            },
-            has_legacy_camera_hal1: {
-                cflags: ["-DCAMCORDER_GRALLOC_SOURCE"],
-            },
-            use_legacy_rescaling: {
-                cflags: ["-DUSE_LEGACY_RESCALING"],
-            },
+        cant_reallocate_omx_buffers: {
+            cflags: ["-DBOARD_CANT_REALLOCATE_OMX_BUFFERS"],
+        },
+        has_legacy_camera_hal1: {
+            cflags: ["-DCAMCORDER_GRALLOC_SOURCE"],
+        },
+        use_legacy_rescaling: {
+            cflags: ["-DUSE_LEGACY_RESCALING"],
         },
     },
 
